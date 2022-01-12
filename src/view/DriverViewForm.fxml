@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="driverViewFormContext" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverViewFormController">
+   <children>
+      <AnchorPane fx:id="driverViewFormContext2" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: black;">
+         <children>
+            <AnchorPane fx:id="lblDriver" layoutX="389.0" layoutY="464.0" prefHeight="50.0" prefWidth="391.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXComboBox fx:id="cmbDriver" focusColor="WHITE" layoutY="5.0" prefHeight="41.0" prefWidth="398.0" unFocusColor="WHITE" />
+                  <Label fx:id="lblDriver2" layoutX="14.0" layoutY="5.0" prefHeight="41.0" prefWidth="343.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="389.0" layoutY="259.0" prefHeight="50.0" prefWidth="398.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXComboBox fx:id="cmbVehicleNo" focusColor="WHITE" layoutY="7.0" prefHeight="41.0" prefWidth="398.0" unFocusColor="WHITE" />
+               </children>
+            </AnchorPane>
+            <Label layoutX="82.0" layoutY="254.0" prefHeight="59.0" prefWidth="247.0" text="Vehicle No  :  " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="82.0" layoutY="359.0" prefHeight="59.0" prefWidth="209.0" text="Vehicle Type  : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtVehicleType" layoutX="389.0" layoutY="359.0" prefHeight="50.0" prefWidth="398.0" style="-fx-background-color: white;" />
+            <Label layoutX="82.0" layoutY="459.0" prefHeight="59.0" prefWidth="209.0" text="Driver  : " textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="60.0" layoutY="86.0" prefHeight="80.0" prefWidth="509.0" text="Parking System" textFill="YELLOW">
+               <font>
+                  <Font name="Montserrat Black" size="50.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnPark" buttonType="RAISED" layoutX="92.0" layoutY="612.0" onAction="#parkAndDeliveryShiftOnAction" prefHeight="59.0" prefWidth="320.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Park Vehicle">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXButton fx:id="btnOnDelivery" buttonType="RAISED" layoutX="444.0" layoutY="612.0" onAction="#parkAndDeliveryShiftOnAction" prefHeight="59.0" prefWidth="343.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="On Delivery Shift">
+               <font>
+                  <Font name="Montserrat SemiBold" size="25.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="522.0" layoutY="122.0" prefHeight="4.0" prefWidth="1276.0" style="-fx-background-color: yellow;" />
+            <ImageView fitHeight="100.0" fitWidth="103.0" layoutX="92.0" layoutY="821.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/admin_pic.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="213.0" layoutY="864.0" onAction="#loginFormOnAction" prefHeight="41.0" prefWidth="156.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text=" Log In">
+               <font>
+                  <Font name="Montserrat Regular" size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Label layoutX="204.0" layoutY="809.0" prefHeight="41.0" prefWidth="221.0" text="Management" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="92.0" layoutY="952.0" text="Version 1.0.0" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Light" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="895.0" layoutY="259.0" prefHeight="50.0" prefWidth="328.0" text="Date" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Medium" size="40.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="949.0" layoutY="337.0" prefHeight="142.0" prefWidth="690.0" text="Time" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat ExtraBold" size="70.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="978.0" layoutY="564.0" prefHeight="337.0" prefWidth="697.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="48.0" layoutY="40.0" text="Your Parking Slot Number  : ">
+                     <font>
+                        <Font name="Montserrat SemiBold" size="40.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblSlotNumber" layoutX="70.0" layoutY="124.0" prefHeight="181.0" prefWidth="558.0" textAlignment="CENTER">
+                     <font>
+                        <Font name="Montserrat ExtraBold" size="70.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="264.0" fitWidth="461.0" layoutX="1326.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

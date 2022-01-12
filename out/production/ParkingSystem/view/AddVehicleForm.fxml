@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addVehicleContextMain" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddVehicleFormController">
+   <children>
+      <AnchorPane opacity="0.5" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" />
+      <AnchorPane fx:id="addVehicleContext" layoutX="2.0" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <AnchorPane fx:id="addVehiclecontext2" layoutX="466.0" layoutY="252.0" prefHeight="552.0" prefWidth="1080.0" style="-fx-background-color: black; -fx-background-radius: 50;">
+               <children>
+                  <AnchorPane layoutX="765.0" layoutY="171.0" prefHeight="36.0" prefWidth="209.0" style="-fx-background-color: white;">
+                     <children>
+                        <JFXComboBox fx:id="cmbAddVehicleType" layoutX="10.0" layoutY="3.0" prefHeight="31.0" prefWidth="190.0" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="59.0" layoutY="60.0" text="Add Vehicle" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat SemiBold" size="35.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="296.0" layoutY="69.0" prefHeight="26.0" prefWidth="723.0" />
+                  <Label layoutX="94.0" layoutY="175.0" text="Vehicle Number  : " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtAddVehicleNumber" labelFloat="true" layoutX="311.0" layoutY="161.0" prefHeight="36.0" prefWidth="251.0" style="-fx-background-color: white;" />
+                  <Label layoutX="95.0" layoutY="247.0" text="Maximum Weight  :  " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtAddMaxWeigh" labelFloat="true" layoutX="311.0" layoutY="229.0" prefHeight="36.0" prefWidth="251.0" style="-fx-background-color: white;" />
+                  <Label layoutX="101.0" layoutY="318.0" text="No Of Passengers  : " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtAddNoOfPassenger" labelFloat="true" layoutX="311.0" layoutY="300.0" prefHeight="36.0" prefWidth="251.0" style="-fx-background-color: white;" />
+                  <Label layoutX="618.0" layoutY="176.0" text="Vehicle Type  : " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="632.0" layoutY="402.0" onAction="#cancelAddVehicleOnAction" prefHeight="43.0" prefWidth="155.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Cancel">
+                     <font>
+                        <Font name="Montserrat SemiBold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="822.0" layoutY="402.0" onAction="#addVehicleOnAction" prefHeight="43.0" prefWidth="155.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Add Vehicle">
+                     <font>
+                        <Font name="Montserrat SemiBold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

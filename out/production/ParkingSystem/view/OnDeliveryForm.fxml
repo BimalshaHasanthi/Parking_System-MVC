@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="832.0" prefWidth="1927.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OnDeliveryFormController">
+   <children>
+      <Label layoutX="113.0" layoutY="71.0" text="On Delivery" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="35.0" />
+         </font>
+      </Label>
+      <Separator layoutX="367.0" layoutY="84.0" prefHeight="18.0" prefWidth="1444.0" />
+      <TableView fx:id="tblOnDelivery" layoutX="148.0" layoutY="191.0" prefHeight="489.0" prefWidth="1631.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNo" prefWidth="410.0" style="-fx-font-size: 25;" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="290.0" style="-fx-font-size: 25;" text="Vehicle Type" />
+            <TableColumn fx:id="colDriverName" prefWidth="479.0" style="-fx-font-size: 25;" text="Driver Name" />
+            <TableColumn fx:id="colLeftTime" prefWidth="451.0" style="-fx-font-size: 25;" text="Left Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

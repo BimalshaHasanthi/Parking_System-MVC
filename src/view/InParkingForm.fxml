@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="832.0" prefWidth="1927.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.InParkingFormController">
+   <children>
+      <Label layoutX="103.0" layoutY="61.0" text="In Parking" textFill="WHITE">
+         <font>
+            <Font name="Montserrat SemiBold" size="35.0" />
+         </font>
+      </Label>
+      <Separator layoutX="324.0" layoutY="74.0" prefHeight="18.0" prefWidth="1477.0" />
+      <TableView fx:id="tblInParking" layoutX="148.0" layoutY="176.0" prefHeight="489.0" prefWidth="1631.0">
+        <columns>
+          <TableColumn fx:id="colVehicleNo" prefWidth="320.99993896484375" style="-fx-font-size: 25;" text="Vehicle Number" />
+          <TableColumn fx:id="colVehicleType" prefWidth="426.0" style="-fx-font-size: 25;" text="Vehicle Type" />
+            <TableColumn fx:id="colParkingSlot" prefWidth="360.0" style="-fx-font-size: 25;" text="Parking Slot" />
+            <TableColumn fx:id="colParkedTime" prefWidth="526.0" style="-fx-font-size: 25;" text="Parked Time" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

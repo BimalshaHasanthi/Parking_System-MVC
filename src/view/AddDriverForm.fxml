@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="addDriverContextMain" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddDriverFormController">
+   <children>
+      <AnchorPane opacity="0.5" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: white;" />
+      <AnchorPane fx:id="addDriverContext" prefHeight="1080.0" prefWidth="1920.0">
+         <children>
+            <AnchorPane layoutX="417.0" layoutY="264.0" prefHeight="552.0" prefWidth="1086.0" style="-fx-background-color: black; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="54.0" layoutY="66.0" text="Add Driver" textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat SemiBold" size="35.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="291.0" layoutY="75.0" prefHeight="26.0" prefWidth="723.0" />
+                  <JFXButton buttonType="RAISED" layoutX="627.0" layoutY="408.0" onAction="#cancelAddDriverOnAction" prefHeight="43.0" prefWidth="155.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Cancel">
+                     <font>
+                        <Font name="Montserrat SemiBold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" layoutX="817.0" layoutY="408.0" onAction="#addDriverOnAction" prefHeight="43.0" prefWidth="155.0" style="-fx-background-color: yellow; -fx-background-radius: 50;" text="Add Driver">
+                     <font>
+                        <Font name="Montserrat SemiBold" size="20.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <Label layoutX="54.0" layoutY="166.0" text="Driver Name  : " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtAddDriverName" labelFloat="true" layoutX="272.0" layoutY="161.0" prefHeight="36.0" prefWidth="251.0" style="-fx-background-color: white;" />
+                  <Label layoutX="54.0" layoutY="224.0" text="NIC  : " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtAddNIC" labelFloat="true" layoutX="272.0" layoutY="219.0" prefHeight="36.0" prefWidth="251.0" style="-fx-background-color: white;" />
+                  <Label layoutX="54.0" layoutY="292.0" text="Driving License No  : " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtAddDrivingLicenseNo" labelFloat="true" layoutX="272.0" layoutY="282.0" prefHeight="36.0" prefWidth="251.0" style="-fx-background-color: white;" />
+                  <Label layoutX="586.0" layoutY="166.0" text="Address  : " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="586.0" layoutY="224.0" text="Contact No  : " textFill="WHITE">
+                     <font>
+                        <Font name="Montserrat Regular" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtContactNo" labelFloat="true" layoutX="742.0" layoutY="219.0" prefHeight="36.0" prefWidth="251.0" style="-fx-background-color: white;" />
+                  <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="742.0" layoutY="161.0" prefHeight="36.0" prefWidth="251.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
